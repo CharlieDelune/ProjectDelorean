@@ -33,3 +33,6 @@ The computer I originally designed this project on no longer exists on this plan
 the cloud and imported it into Unity 2020, and made sure it built and ran. **That is the extent of support I intend to provide
 for this project.** It runs, albeit poorly. Many textures are missing. Mason can one-shot everything. But the general idea
 of it is there, and most importantly, the title screen music I wrote is still there.
+
+## Can I play it?
+Yes! It's hosted at [my portfolio site in all its glory](http://www.jeffsweb.site/ProjectDelorean/)!
