@@ -1,0 +1,66 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class TownBossTriggerEvent3 : AbstractEventController {
+	public GameObject mason2Object;
+	public Sprite baddieHead;
+	public Sprite orcHead;
+	public GameObject baddie;
+	public GameObject orc5;
+	public GameObject orc6;
+	public GameObject orc7;
+	public GameObject orc8;
+	public GameObject enemyEncounter;
+	public GameObject arenaObject;
+	public GameObject nextEventObject;
+	public override IEnumerator EventCoroutine(){
+		player.StopMovement();
+		SetObjectPosition(player.gameObject,new Vector3(57.0f,0.35f,-16.5f));
+		SetObjectPosition(mason2Object, new Vector3(54f,1.4f,-26f));
+		PlayAnimationPersistent(player.gameObject,"BattleIdleRight");
+		PlayAnimationPersistent(baddie,"IdleLeft");
+		StartCoroutine(MoveObject(mason2Object,Direction.Right));
+		yield return StartCoroutine(ShowDialogue("Your persistence is starting to annoy me, Mason. Fine, then. I gave you a chance, never claim otherwise. Soldiers?", "Saddarr", baddieHead));
+		StartCoroutine(MoveObject(mason2Object,Direction.Right));
+		yield return StartCoroutine(ShowDialogue("Eliminate him.", "Saddarr", baddieHead));
+		StartCoroutine(MoveObject(mason2Object,Direction.Right));
+		StartCoroutine(MoveObject(orc5,Direction.Left));
+		StartCoroutine(MoveObject(orc6,Direction.Left));
+		StartCoroutine(MoveObject(orc7,Direction.Left));
+		yield return StartCoroutine(MoveObject(orc8,Direction.Left));
+		StartCoroutine(MoveObject(mason2Object,Direction.Right));
+		StartCoroutine(MoveObject(orc5,Direction.Left));
+		StartCoroutine(MoveObject(orc6,Direction.Left));
+		StartCoroutine(MoveObject(orc7,Direction.Left));
+		yield return StartCoroutine(MoveObject(orc8,Direction.Left));
+		StartCoroutine(MoveObject(mason2Object,Direction.Right));
+		StartCoroutine(MoveObject(orc5,Direction.Left));
+		StartCoroutine(MoveObject(orc6,Direction.Left));
+		StartCoroutine(MoveObject(orc7,Direction.Left));
+		StartCoroutine(ResetCamera(2.0f));
+		yield return StartCoroutine(MoveObject(orc8,Direction.Left));
+		yield return StartCoroutine(MoveObject(mason2Object,Direction.Right));
+		PlayAnimationPersistent(mason2Object,"BattleIdleRight");
+		yield return StartCoroutine(ShowDialogue("Alright, I think it's time I step in! Come on, Mason, let's take them together!", "Mason?", masonHead));
+		yield return StartCoroutine(ShowDialogue("Whaaaaaaaaaaat is happening right now? Am I having a stroke?", "Mason", masonHead));
+		yield return StartCoroutine(ShowDialogue("No! And you're totally ruining my entrance! Just go with it, okay? I'll explain everything in a second.", "Mason?", masonHead));
+		yield return StartCoroutine(ShowDialogue("Okay? Okay...... Okay.", "Mason", masonHead));
+		SetPartyMemberAvailable(party.GetUnitStats("Mason?"),true);
+		PlayAnimationPersistent(player.gameObject,"BattleIdleRight");
+		StartCoroutine(MoveObject(orc5,Direction.Left));
+		StartCoroutine(MoveObject(orc6,Direction.Left));
+		StartCoroutine(MoveObject(orc7,Direction.Left));
+		yield return StartCoroutine(MoveObject(orc8,Direction.Left));
+		StartCoroutine(PlayAnimation(orc5,"ThrustLeft"));
+		StartCoroutine(PlayAnimation(orc6,"ThrustLeft"));
+		StartCoroutine(PlayAnimation(orc7,"ThrustLeft"));
+		yield return StartCoroutine(PlayAnimation(orc8,"ThrustLeft"));
+		DeleteObject(orc5);
+		DeleteObject(orc6);
+		DeleteObject(orc7);
+		DeleteObject(orc8);
+		StartBattle(enemyEncounter,arenaObject,gameObject,nextEventObject);
+		EndEventCoroutine();
+	}
+}

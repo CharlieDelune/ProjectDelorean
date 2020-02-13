@@ -1,0 +1,268 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1241421640207848}
+  m_IsPrefabParent: 1
+--- !u!1 &1241421640207848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4961039643085984}
+  - component: {fileID: 114919759845635700}
+  m_Layer: 0
+  m_Name: EnemyParty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1750238235803224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4662103237248350}
+  - component: {fileID: 114078691257168496}
+  - component: {fileID: 114703733393388470}
+  m_Layer: 0
+  m_Name: Wolf
+  m_TagString: EnemyUnit
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1773186020893402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4842841511117844}
+  - component: {fileID: 114932307726978096}
+  - component: {fileID: 114410701808885728}
+  m_Layer: 0
+  m_Name: Wolf
+  m_TagString: EnemyUnit
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4662103237248350
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1750238235803224}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4961039643085984}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4842841511117844
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1773186020893402}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4961039643085984}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4961039643085984
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1241421640207848}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4842841511117844}
+  - {fileID: 4662103237248350}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114078691257168496
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1750238235803224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc5d1f587204c640b688dcd050b0dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charName: Wolf
+  baseAttack: 13
+  modAttack: 0
+  baseMagAttack: 1
+  modMagAttack: 0
+  baseDefense: 1
+  modDefense: 0
+  baseMagDefense: 120
+  modMagDefense: 0
+  baseAgility: 10
+  modAgility: 0
+  maxHealth: 125
+  currentHealth: 125
+  maxMana: 10
+  currentMana: 10
+  level: 1
+  experience: 0
+  experienceToNextLevel: 0
+  weapon: 
+  armor: 
+  accessory1: 
+  accessory2: 
+  battleHead: {fileID: 21300000, guid: dbaff26ea938ec149a0e83b7f3436709, type: 3}
+  battleActions: []
+  battleYValue: 0.265
+  battlePrefab: {fileID: 1244946583228480, guid: 0065a3184cc00584a87f5408107739da,
+    type: 2}
+  worldYValue: 0
+  turnCounter: 0
+  dead: 0
+  available: 0
+  abilitiesToGetOnLevelUp: []
+  abilityUnlockLevels: 
+  charMode: 0
+  currentDefaultTurnCounter: 0
+  battleAnimator: {fileID: 0}
+  battleButton: {fileID: 0}
+  defaultAttackAnimation: Attack
+  unitType: 1
+  battleLocation: 
+  facing: 0
+  enemyAI: {fileID: 0}
+--- !u!114 &114410701808885728
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1773186020893402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 021d6e77a590c5c4ba3f50adf5433e99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flow: {fileID: 0}
+  ui: {fileID: 0}
+  attackDefend: {fileID: 0}
+  mode: {fileID: 0}
+  ability: {fileID: 0}
+  item: {fileID: 0}
+  currentTurn: 0
+  currentUnit: {fileID: 0}
+  enemyParty: {fileID: 0}
+--- !u!114 &114703733393388470
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1750238235803224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 021d6e77a590c5c4ba3f50adf5433e99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flow: {fileID: 0}
+  ui: {fileID: 0}
+  attackDefend: {fileID: 0}
+  mode: {fileID: 0}
+  ability: {fileID: 0}
+  item: {fileID: 0}
+  currentTurn: 0
+  currentUnit: {fileID: 0}
+  enemyParty: {fileID: 0}
+--- !u!114 &114919759845635700
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1241421640207848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aae36498f0a243788c0ae955005080f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  experienceGained: 5
+  coinsGained: 6
+  itemNames: []
+  itemCounts: 
+  enemyParty:
+  - {fileID: 1773186020893402}
+  - {fileID: 1750238235803224}
+--- !u!114 &114932307726978096
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1773186020893402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc5d1f587204c640b688dcd050b0dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charName: Wolf
+  baseAttack: 13
+  modAttack: 0
+  baseMagAttack: 1
+  modMagAttack: 0
+  baseDefense: 1
+  modDefense: 0
+  baseMagDefense: 120
+  modMagDefense: 0
+  baseAgility: 10
+  modAgility: 0
+  maxHealth: 125
+  currentHealth: 125
+  maxMana: 10
+  currentMana: 10
+  level: 1
+  experience: 0
+  experienceToNextLevel: 0
+  weapon: 
+  armor: 
+  accessory1: 
+  accessory2: 
+  battleHead: {fileID: 21300000, guid: dbaff26ea938ec149a0e83b7f3436709, type: 3}
+  battleActions: []
+  battleYValue: 0.265
+  battlePrefab: {fileID: 1244946583228480, guid: 0065a3184cc00584a87f5408107739da,
+    type: 2}
+  worldYValue: 0
+  turnCounter: 0
+  dead: 0
+  available: 0
+  abilitiesToGetOnLevelUp: []
+  abilityUnlockLevels: 
+  charMode: 0
+  currentDefaultTurnCounter: 0
+  battleAnimator: {fileID: 0}
+  battleButton: {fileID: 0}
+  defaultAttackAnimation: Attack
+  unitType: 1
+  battleLocation: 
+  facing: 0
+  enemyAI: {fileID: 0}

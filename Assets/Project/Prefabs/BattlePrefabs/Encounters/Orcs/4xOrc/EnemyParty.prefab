@@ -1,0 +1,482 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1241421640207848}
+  m_IsPrefabParent: 1
+--- !u!1 &1241421640207848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4961039643085984}
+  - component: {fileID: 114919759845635700}
+  m_Layer: 0
+  m_Name: EnemyParty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1356785334381510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4216601734584466}
+  - component: {fileID: 114252594072718910}
+  - component: {fileID: 114726914341244144}
+  m_Layer: 0
+  m_Name: Orc (1)
+  m_TagString: EnemyUnit
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1631919982108740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4689842722735020}
+  - component: {fileID: 114419785471046658}
+  - component: {fileID: 114796879390710954}
+  m_Layer: 0
+  m_Name: Orc (2)
+  m_TagString: EnemyUnit
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1750238235803224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4662103237248350}
+  - component: {fileID: 114346973838301842}
+  - component: {fileID: 114333252900620378}
+  m_Layer: 0
+  m_Name: Orc (3)
+  m_TagString: EnemyUnit
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1859802899510478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4518479357488284}
+  - component: {fileID: 114584463700471674}
+  - component: {fileID: 114543828950530462}
+  m_Layer: 0
+  m_Name: Orc
+  m_TagString: EnemyUnit
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4216601734584466
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1356785334381510}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4961039643085984}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4518479357488284
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1859802899510478}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4961039643085984}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4662103237248350
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1750238235803224}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4961039643085984}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4689842722735020
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1631919982108740}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4961039643085984}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4961039643085984
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1241421640207848}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4518479357488284}
+  - {fileID: 4216601734584466}
+  - {fileID: 4689842722735020}
+  - {fileID: 4662103237248350}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114252594072718910
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1356785334381510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc5d1f587204c640b688dcd050b0dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charName: Orc
+  baseAttack: 14
+  modAttack: 0
+  baseMagAttack: 5
+  modMagAttack: 0
+  baseDefense: 15
+  modDefense: 0
+  baseMagDefense: 5
+  modMagDefense: 0
+  baseAgility: 5
+  modAgility: 0
+  maxHealth: 822
+  currentHealth: 822
+  maxMana: 33
+  currentMana: 33
+  level: 1
+  experience: 0
+  experienceToNextLevel: 0
+  weapon: 
+  armor: 
+  accessory1: 
+  accessory2: 
+  battleHead: {fileID: 21300000, guid: 9fd719db992963b449dfbd29390f6d33, type: 3}
+  battleActions: []
+  battleYValue: 0.265
+  battlePrefab: {fileID: 1244946583228480, guid: c80f1c4fe24c8024fb4eabf0bdc9083b,
+    type: 2}
+  worldYValue: 0
+  turnCounter: 0
+  dead: 0
+  available: 0
+  abilitiesToGetOnLevelUp:
+  - Hard Thrust
+  abilityUnlockLevels: 01000000
+  charMode: 0
+  currentDefaultTurnCounter: 0
+  battleAnimator: {fileID: 0}
+  battleButton: {fileID: 0}
+  defaultAttackAnimation: Thrust
+  unitType: 1
+  battleLocation: 
+  facing: 0
+  enemyAI: {fileID: 0}
+--- !u!114 &114333252900620378
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1750238235803224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f1ad399e31cc747a023fc434d405fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flow: {fileID: 0}
+  ui: {fileID: 0}
+  attackDefend: {fileID: 0}
+  mode: {fileID: 0}
+  ability: {fileID: 0}
+  item: {fileID: 0}
+  currentTurn: 0
+  currentUnit: {fileID: 0}
+  enemyParty: {fileID: 0}
+--- !u!114 &114346973838301842
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1750238235803224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc5d1f587204c640b688dcd050b0dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charName: Orc
+  baseAttack: 14
+  modAttack: 0
+  baseMagAttack: 5
+  modMagAttack: 0
+  baseDefense: 15
+  modDefense: 0
+  baseMagDefense: 5
+  modMagDefense: 0
+  baseAgility: 5
+  modAgility: 0
+  maxHealth: 822
+  currentHealth: 822
+  maxMana: 33
+  currentMana: 33
+  level: 1
+  experience: 0
+  experienceToNextLevel: 0
+  weapon: 
+  armor: 
+  accessory1: 
+  accessory2: 
+  battleHead: {fileID: 21300000, guid: 9fd719db992963b449dfbd29390f6d33, type: 3}
+  battleActions: []
+  battleYValue: 0.265
+  battlePrefab: {fileID: 1244946583228480, guid: c80f1c4fe24c8024fb4eabf0bdc9083b,
+    type: 2}
+  worldYValue: 0
+  turnCounter: 0
+  dead: 0
+  available: 0
+  abilitiesToGetOnLevelUp:
+  - Hard Thrust
+  abilityUnlockLevels: 01000000
+  charMode: 0
+  currentDefaultTurnCounter: 0
+  battleAnimator: {fileID: 0}
+  battleButton: {fileID: 0}
+  defaultAttackAnimation: Thrust
+  unitType: 1
+  battleLocation: 
+  facing: 0
+  enemyAI: {fileID: 0}
+--- !u!114 &114419785471046658
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1631919982108740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc5d1f587204c640b688dcd050b0dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charName: Orc
+  baseAttack: 14
+  modAttack: 0
+  baseMagAttack: 5
+  modMagAttack: 0
+  baseDefense: 15
+  modDefense: 0
+  baseMagDefense: 5
+  modMagDefense: 0
+  baseAgility: 5
+  modAgility: 0
+  maxHealth: 822
+  currentHealth: 822
+  maxMana: 33
+  currentMana: 33
+  level: 1
+  experience: 0
+  experienceToNextLevel: 0
+  weapon: 
+  armor: 
+  accessory1: 
+  accessory2: 
+  battleHead: {fileID: 21300000, guid: 9fd719db992963b449dfbd29390f6d33, type: 3}
+  battleActions: []
+  battleYValue: 0.265
+  battlePrefab: {fileID: 1244946583228480, guid: c80f1c4fe24c8024fb4eabf0bdc9083b,
+    type: 2}
+  worldYValue: 0
+  turnCounter: 0
+  dead: 0
+  available: 0
+  abilitiesToGetOnLevelUp:
+  - Hard Thrust
+  abilityUnlockLevels: 01000000
+  charMode: 0
+  currentDefaultTurnCounter: 0
+  battleAnimator: {fileID: 0}
+  battleButton: {fileID: 0}
+  defaultAttackAnimation: Thrust
+  unitType: 1
+  battleLocation: 
+  facing: 0
+  enemyAI: {fileID: 0}
+--- !u!114 &114543828950530462
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1859802899510478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f1ad399e31cc747a023fc434d405fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flow: {fileID: 0}
+  ui: {fileID: 0}
+  attackDefend: {fileID: 0}
+  mode: {fileID: 0}
+  ability: {fileID: 0}
+  item: {fileID: 0}
+  currentTurn: 0
+  currentUnit: {fileID: 0}
+  enemyParty: {fileID: 0}
+--- !u!114 &114584463700471674
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1859802899510478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc5d1f587204c640b688dcd050b0dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charName: Orc
+  baseAttack: 14
+  modAttack: 0
+  baseMagAttack: 5
+  modMagAttack: 0
+  baseDefense: 15
+  modDefense: 0
+  baseMagDefense: 5
+  modMagDefense: 0
+  baseAgility: 5
+  modAgility: 0
+  maxHealth: 822
+  currentHealth: 822
+  maxMana: 33
+  currentMana: 33
+  level: 1
+  experience: 0
+  experienceToNextLevel: 0
+  weapon: 
+  armor: 
+  accessory1: 
+  accessory2: 
+  battleHead: {fileID: 21300000, guid: 9fd719db992963b449dfbd29390f6d33, type: 3}
+  battleActions: []
+  battleYValue: 0.265
+  battlePrefab: {fileID: 1244946583228480, guid: c80f1c4fe24c8024fb4eabf0bdc9083b,
+    type: 2}
+  worldYValue: 0
+  turnCounter: 0
+  dead: 0
+  available: 0
+  abilitiesToGetOnLevelUp:
+  - Hard Thrust
+  abilityUnlockLevels: 01000000
+  charMode: 0
+  currentDefaultTurnCounter: 0
+  battleAnimator: {fileID: 0}
+  battleButton: {fileID: 0}
+  defaultAttackAnimation: Thrust
+  unitType: 1
+  battleLocation: 
+  facing: 0
+  enemyAI: {fileID: 0}
+--- !u!114 &114726914341244144
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1356785334381510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f1ad399e31cc747a023fc434d405fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flow: {fileID: 0}
+  ui: {fileID: 0}
+  attackDefend: {fileID: 0}
+  mode: {fileID: 0}
+  ability: {fileID: 0}
+  item: {fileID: 0}
+  currentTurn: 0
+  currentUnit: {fileID: 0}
+  enemyParty: {fileID: 0}
+--- !u!114 &114796879390710954
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1631919982108740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f1ad399e31cc747a023fc434d405fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flow: {fileID: 0}
+  ui: {fileID: 0}
+  attackDefend: {fileID: 0}
+  mode: {fileID: 0}
+  ability: {fileID: 0}
+  item: {fileID: 0}
+  currentTurn: 0
+  currentUnit: {fileID: 0}
+  enemyParty: {fileID: 0}
+--- !u!114 &114919759845635700
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1241421640207848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aae36498f0a243788c0ae955005080f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  experienceGained: 15
+  coinsGained: 20
+  itemNames: []
+  itemCounts: 
+  enemyParty:
+  - {fileID: 1859802899510478}
+  - {fileID: 1356785334381510}
+  - {fileID: 1631919982108740}
+  - {fileID: 1750238235803224}

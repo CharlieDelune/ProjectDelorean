@@ -1,0 +1,65 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class OverworldNightPartyEvent : AbstractEventController {
+	public Sprite catHead;
+	public Sprite eiraHead;
+	public Sprite valdisHead;
+	public Sprite garfHead;
+	public Sprite bhirtHead;
+	public Sprite kodaHead;
+	public GameObject catObject;
+	public GameObject eiraObject;
+	public GameObject valdisObject;
+	public GameObject garfObject;
+	public GameObject bhirtObject;
+	public GameObject kodaObject;
+	public override IEnumerator EventCoroutine(){
+		player.StopMovement();
+		yield return StartCoroutine(FadeOut());
+		SetObjectPosition(player.gameObject,new Vector3(-5.0f,1.15f,39.0f));
+		SetObjectPosition(bhirtObject,new Vector3(-5f,2.22f,31f));
+		SetObjectPosition(garfObject,new Vector3(-4.5f,2.22f,31f));
+		SetObjectPosition(eiraObject,new Vector3(-3.5f,2.22f,30f));
+		SetObjectPosition(valdisObject,new Vector3(-5.5f,2.22f,30.5f));
+		SetObjectPosition(kodaObject,new Vector3(-4.0f,2.22f,30.5f));
+		SetObjectPosition(catObject,new Vector3(-6f,2.22f,30f));
+		PlayAnimationPersistent(bhirtObject,"IdleDown");
+		PlayAnimationPersistent(garfObject,"IdleDown");
+		PlayAnimationPersistent(eiraObject,"IdleDown");
+		PlayAnimationPersistent(valdisObject,"IdleDown");
+		PlayAnimationPersistent(kodaObject,"IdleDown");
+		PlayAnimationPersistent(catObject,"IdleDown");
+		PlayAnimationPersistent(player.gameObject,"IdleUp");
+		yield return StartCoroutine(FadeIn());
+		yield return StartCoroutine(ShowDialogue("So... that's what he said.","Mason",masonHead));
+		yield return StartCoroutine(ShowDialogue("<i>Who</i> said?","Bhirt",bhirtHead));
+		yield return StartCoroutine(ShowDialogue("The other me.","Mason",masonHead));
+		yield return StartCoroutine(ShowDialogue("The you from the future...","Valdis",valdisHead));
+		yield return StartCoroutine(ShowDialogue("But you've never interacted with your own timeline.","Eira",eiraHead));
+		yield return StartCoroutine(ShowDialogue("That's not really how it works. We're going to have to explain it as we go, but he could do that part later.","Garf",garfHead));
+		yield return StartCoroutine(ShowDialogue("And how exactly are you so good at piecing all this together?","Bhirt",bhirtHead));
+		yield return StartCoroutine(ShowDialogue("Mason and I have been traveling together a <i>long</i> time. I've just picked some things up.","Garf",garfHead));
+		yield return StartCoroutine(ShowDialogue("Honestly, this isn't super important right now. We've got to get moving, we've got to stop this Saddarr.","Mason",masonHead));
+		yield return StartCoroutine(ShowDialogue("Well, I mean, it's not like we don't have the time... Technically...","Garf",garfHead));
+		yield return StartCoroutine(ShowDialogue("Garf, you're not helping.","Mason",masonHead));
+		yield return StartCoroutine(ShowDialogue("Hey, yeah! There's no immediacy because we can time travel... If we screw up, we can just go back and try again, right?","Eira",eiraHead));
+		yield return StartCoroutine(ShowDialogue("No, we can't time travel at will.","Mason",masonHead));
+		yield return StartCoroutine(ShowDialogue("You mean you haven't learned yet how to time travel at will.","Valdis",valdisHead));
+		yield return StartCoroutine(ShowDialogue("Guys.","Mason",masonHead));
+		yield return StartCoroutine(ShowDialogue("Mrph?","Cat",catHead));
+		yield return StartCoroutine(ShowDialogue("Cat, <i>language</i>!","Mason",masonHead));
+		yield return StartCoroutine(ShowDialogue("Valdis, cut him some slack, he's still learning.","Garf",garfHead));
+		yield return StartCoroutine(ShowDialogue("<i>Slowly</i>.","Valdis",valdisHead));
+		yield return StartCoroutine(ShowDialogue("Enough! Those people over there are <i>really</i> dying! <i>Right now</i>! If that's not enough immediacy for you, I don't know what else to say!","Mason",masonHead));
+		yield return StartCoroutine(ShowDialogue("All I know is what the other me told me, and for the rest I have to go with my gut. And you've all trusted my gut enough to get us all here.","Mason",masonHead));
+		yield return StartCoroutine(ShowDialogue("You're right. I'm sorry.","Valdis",valdisHead));
+		yield return StartCoroutine(ShowDialogue("Me too. Of course we trust you, Mason.","Eira",eiraHead));
+		yield return StartCoroutine(ShowDialogue("Good. Alright, let's do this.","Mason",masonHead));
+		yield return StartCoroutine(ShowDialogue("NOTE FROM THE DEVELOPER: Normally there would be a cool time travel special effect here, but we don't really have time to make that happen, so pretend... WHOOSH WHOOSH VWORP YEOW PEEOOWWW BWOMBWOMBWOM BLABLALABLBLBLBL VWORP VWORP..."));
+		yield return StartCoroutine(FadeOut());
+		ChangeLevel("OverworldDay");
+		EndEventCoroutine();
+	}
+}
